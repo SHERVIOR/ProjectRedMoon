@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>RedMoon (RMN)</title>
+  <script src="https://unpkg.com/moralis/dist/moralis.js"></script>
+  <script src="https://cdn.jddelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.5/swiper-bundle.min.css" integrity="sha512-m3pAvNriL711NMlhkZHK6K4Tu2/RjtrzyjxZU8mlAbxxoDoURy27KajN1LGTLeEEPvaN12mKAgSCrYEwF9y0jA==" crossorigin="anonymous" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://unpkg.com/moralis/dist/moralis.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Lato:ital,wght@0,400;0,900;1,300&family=Russo+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/news.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <meta charset="UTF-8">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    <!-- font awesome icons cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+
+    <!-- swiper slider css file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.5/swiper-bundle.min.css" integrity="sha512-m3pAvNriL711NMlhkZHK6K4Tu2/RjtrzyjxZU8mlAbxxoDoURy27KajN1LGTLeEEPvaN12mKAgSCrYEwF9y0jA==" crossorigin="anonymous" />
+
+    <!-- custom style.css file -->
+    <link rel="stylesheet" href="css/article.css">
+
+</head>
+<body>
+    
+    <div id="particles-js">
+      <canvas class="particles-js-canvas-el" width="142" height="916" style="width:100%; height:100%"></canvas>
+    </div>
+    <div id="overlay">
+      <section id="title">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <img src="images/logo.png"  width="110" height="100" alt="" class="d-inline-block align-middle mr-2">  
+
+
+        <a class="navbar-brand brand-title" href="index.html">RedMoon</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span></button>
+
+        <div class="collapse navbar-collapse" id="navbarScroll">
+
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link links" href="index.html">Back to Home</a>
+            </li>
+
+
+          </ul>
+        </div>
+        </nav>
+
+
+
+          <!-- Title -->
+
+          <div class="row">
+          <div class="col-lg-6 column-one">
+                <div>
+                  <h1 class="title-quote">News</h1>
+                  <em class="title-sub">This section shows the latest news and updates about the Red Moon project and other related information. Come back here regularly to know if there are any updates or news, we'll keep you updated at all times.</em>
+                  <div>
+
+  </div>
+
+
+
+  <!-- The text field -->
+
+
+              </div>
+
+
+            </div>
+            <div class="col-lg-6">
+              <div>
+                <img class="title-img" src="images/—Pngtree—vector creative hot news banner_4275287.png" alt="iphone-mockup">
+              </div>
+            </div>
+
+
+
+
+
+
+          </div>
+
+          <!-- Title -->
+
+
+        </section>
+
+      </h1>
+
+    </div>
+    
+       <header id="header" class="shadow bg-light">
+                <button class="toggle-button">
+                    
+                </button>
+           
+       </header>
+    <!-- .Header -->
+
+    <!-- Main Site -->
+      <section id="features">
+        
+
+        <main id="site-main">
+            <section class="container">
+                <article id="post">
+                   
+                    <div class="headings text-center">
+
+                        <div class="title">
+                            <h2 class="text-title text-dark display-1">Project RedMoon had been launched!</h2>
+                        </div>
+
+                        <div class="meta">
+                            <a href="#" class="link display-2 text-secondary px-1">
+                                <i class="fas fa-user text-primary"></i> Ramon Molina
+                            </a>
+                            <a href="#" class="link display-2 text-secondary px-1">
+                                <i class="fas fa-clock text-primary"></i> SUN February 27, 2022
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <!-- thumbnail  -->
+                    <div class="thumbnail mt-3">
+                        <img src="./assets/img1.jpg" class="thumbnail" alt="">
+                    </div>
+
+                    <!-- content -->
+                    <div class="content text-dark display-2 secondary-title mt-3">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum itaque
+                            blanditiis adipisci aliquam dolore consequuntur fuga sed consectetur quas perspiciatis?
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum itaque
+                            blanditiis adipisci aliquam dolore consequuntur fuga sed consectetur quas perspiciatis?
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum itaque
+                            blanditiis adipisci aliquam dolore consequuntur fuga sed consectetur quas perspiciatis?
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum itaque
+                            blanditiis adipisci aliquam dolore consequuntur fuga sed consectetur quas perspiciatis?
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum itaque
+                            blanditiis adipisci aliquam dolore consequuntur fuga sed consectetur quas perspiciatis?
+                        </p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum itaque
+                            blanditiis adipisci aliquam dolore consequuntur fuga sed consectetur quas perspiciatis?
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum itaque
+                            blanditiis adipisci aliquam dolore consequuntur fuga sed consectetur quas perspiciatis?
+                        </p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum itaque
+                            blanditiis adipisci aliquam dolore consequuntur fuga sed consectetur quas perspiciatis?
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum itaque
+                            blanditiis adipisci aliquam dolore consequuntur fuga sed consectetur quas perspiciatis?
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum itaque
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum itaque
+                            blanditiis adipisci aliquam dolore consequuntur fuga sed consectetur quas perspiciatis?
+                        </p>
+                    </div>
+                </article>
+
+                <!-- post footer -->
+                <div class="post-footer mb-3">
+                    <div class="post-tags d-flex flex-wrap justify-content-center">
+                        <a href="#" class="nav-link btn bg-light">Travel</a>
+                        <a href="#" class="nav-link btn bg-light">Food</a>
+                        <a href="#" class="nav-link btn bg-light">Lifestyle</a>
+                        <a href="#" class="nav-link btn bg-light">Techonogy</a>
+                        <a href="#" class="nav-link btn bg-light">Fashion</a>
+                    </div>
+
+                    <div class="post-author text-center">
+                        <div class="author-avatar">
+                            <img src="./assets/face/face2.jpg" class="rounded" alt="">
+                        </div>
+
+                        <div class="author-info py-2">
+                            <h3 class="text-dark">Ramon Molina</h3>
+
+                            <p class="text-secondary secondary-title">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Recusandae, sequi! In harum laborum ipsa voluptatibus doloremque nulla, tempore aut veritatis.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+            </section>
+       </main>
+
+
+       <section id="footer">
+        <footer class="footer">
+      <div class="container">
+       <div class="row">
+         <div class="footer-col">
+           <h4><u>RedMoon</u></h4>
+           <ul>
+            <li><a href="index.html">Home</a></li>
+             <li><a href="aboutus.html">About Us</a></li>
+             <li><a href="ourservices.html">our services</a></li>
+             <li><a href="donate.html">Donate</a></li>
+             <li><a href="terms.html">Terms of Use</a></li>i>
+           </ul>
+         </div>
+         <div class="footer-col">
+           <h4><u>get help</u></h4>
+           <ul>
+            <li><a href="news.html">News</a></li>
+            <li><a href="FAQ.html">FAQ</a></li>
+            <li><a href="contact.html">Email</a></li>
+            <li><a href="contact.html">White paper</a></li>
+            <li><a href="privacy.html">Privacy policy</a></li>
+           </ul>
+         </div>
+         <div class="footer-col">
+           <h4><u>online shop</u></h4>
+           <ul>
+             <li><a href="#">CoinMarketCap</a></li>
+             <li><a href="#">CoinGecko</a></li>
+             <li><a href="#">PancakeSwap</a></li>
+             <li><a href="https://bscscan.com/token/0x0b8565fd25ae680c776f2ae060f10183526c375f#readContract">BscScan</a></li>
+             <li><a href="https://poocoin.app/tokens/0x0b8565fd25ae680c776f2ae060f10183526c375f">PooCoin</a></li>
+           </ul>
+         </div>
+         <div class="footer-col">
+           <h4><u>Join The Community</u></h4>
+           <div class="social-links">
+             <a href="https://www.youtube.com/watch?v=QMIUs43npxQ"><i class="fab fa-youtube"></i></a>
+             <a href="https://twitter.com/ToRedMoon"><i class="fab fa-twitter"></i></a>
+             <a href="#"><i class="fab fa-instagram"></i></a>
+             <a href="https://discord.gg/7NatbeMj"><i class="fab fa-discord"></i></a>
+             <a href="https://discord.gg/7NatbeMj"><i class="fab fa-telegram"></i></a>
+             <a href="https://discord.gg/7NatbeMj"><i class="fab fa-reddit"></i></a>
+             <a href="https://discord.gg/7NatbeMj"><i class="fab fa-facebook"></i></a>
+           </div>
+    
+         </div>
+    
+    
+       </div>
+    
+    
+      </div><br>
+      <img src="images/logo.png"  width="110" height="100" >
+    
+      <p class="Copyright">© Copyright 2021 LunarSys RedMoon. All Rights Reserved.</p>
+    
+    
+    
+      </footer>
+    
+    </section>
+
+      </section>
+      
+     
+    <!-- .Main Site -->
+
+    <!-- footer -->
+       
+    <!-- .footer -->
+
+
+    <!-- masonry libray for horizontal grid -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js" integrity="sha512-JRlcvSZAXT8+5SQQAvklXGJuxXTouyq8oIMaYERZQasB8SBDHZaUbeASsJWpk0UUrf89DP3/aefPPrlMR1h1yQ==" crossorigin="anonymous"></script>
+
+    <!-- swiper slider cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.5/swiper-bundle.min.js" integrity="sha512-1LlEYE0qExJ/GUfAJ0k2K2fB5sIvMv/q6ueo3syohvQ3ElWDQVSMUOf39cxaDWHtNu7M6lF6ZC1H6A1m3SvheA==" crossorigin="anonymous"></script>
+
+    <!-- custom javascript main.js file -->
+    <script src="main.js"></script>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+    <script src="FAQ.js"></script>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">↑ Top</button>
+    <script src="up.js"></script>
+</body>
+</html>

@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>RedMoon (RMN)</title>
+  <script src="https://unpkg.com/moralis/dist/moralis.js"></script>
+  <script src="https://cdn.jddelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://unpkg.com/moralis/dist/moralis.js"></script>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Lato:ital,wght@0,400;0,900;1,300&family=Russo+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/donate.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <meta charset="UTF-8">
+
+</head>
+
+
+<body>
+
+
+    <div id="particles-js">
+      <canvas class="particles-js-canvas-el" width="142" height="916" style="width:100%; height:100%"></canvas>
+    </div>
+    <div id="overlay">
+      <section id="title">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <img src="images/logo.png"  width="110" height="100" alt="" class="d-inline-block align-middle mr-2">  
+
+
+        <a class="navbar-brand brand-title" href="index.html">RedMoon</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span></button>
+
+        <div class="collapse navbar-collapse" id="navbarScroll">
+
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link links" href="index.html">Back to Home</a>
+            </li>
+
+
+          </ul>
+        </div>
+        </nav>
+
+
+
+          <!-- Title -->
+
+          <div class="row">
+          <div class="col-lg-6 column-one">
+                <div>
+                  <h1 class="title-quote">Donate Us</h1>
+                  <em class="title-sub">Project RedMoon consists of small team behind the project. Support the team behind the Project RedMoon by donating us with any cryptocurrency listed below and any amount will be greatly appreciated which will help us in building the very foundation of metaverse. </em>
+                  <div>
+
+
+
+
+    <div id="status"></div>
+  </div>
+
+
+
+  <!-- The text field -->
+
+
+              </div>
+
+
+            </div>
+            <div class="col-lg-6">
+              <div>
+                <img class="title-img" src="images/donatee.png" alt="iphone-mockup">
+              </div>
+            </div>
+
+
+
+
+
+
+          </div>
+
+          <!-- Title -->
+
+
+        </section>
+
+      </h1>
+
+    </div>
+
+
+
+
+
+  <!-- Features -->
+
+
+  <section id="features">
+    <div class="card mb-3 mx-auto" style="max-width: 720px;">
+      <div class="row no-gutters">
+        <div class="col-md-4">
+          <img src="images/bitcoin.png" class="card-img" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body mx-auto">
+            <img src="images/bitcoin-donate.png" class="logo-img" alt="...">
+            <h5 class="card-title">Bitcoin (BTC)</h5>
+            <p id="copy"class="card-text">3PMLyCRaQwEQfrTNaAhYtG6L2gm5YiYyXC</p>
+            <button type="button" onclick="copyEvent('copy')"class="btn btn-dark">Copy Address</button>
+            <script>
+              function copyEvent(id)
+              {
+                  var str = document.getElementById(id);
+                  window.getSelection().selectAllChildren(str);
+                  document.execCommand("Copy")
+              }
+            </script>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card mb-3 mx-auto" style="max-width: 720px;">
+      <div class="row no-gutters">
+        <div class="col-md-4">
+          <img src="..." class="card-img" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <img src="images/eth.png" class="logo-img" alt="...">
+            <h5 class="card-title">Ethereum (ETH)</h5>
+            <p id="copy1"class="card-text">random address</p>
+            <button type="button" onclick="copyEvent('copy1')"class="btn btn-dark">Copy Address</button>
+            <script>
+              function copyEvent(id)
+              {
+                  var str = document.getElementById(id);
+                  window.getSelection().selectAllChildren(str);
+                  document.execCommand("Copy")
+              }
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card mb-3 mx-auto" style="max-width: 720px;">
+      <div class="row no-gutters">
+        <div class="col-md-4">
+          <img src="..." class="card-img" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <img src="images/xrp.png" class="logo-img" alt="...">
+            <h5 class="card-title">Ripple (XRP)</h5>
+            <p id="copy2"class="card-text">random address 2</p>
+            <button type="button" onclick="copyEvent('copy2')"class="btn btn-dark">Copy Address</button>
+            <script>
+              function copyEvent(id)
+              {
+                  var str = document.getElementById(id);
+                  window.getSelection().selectAllChildren(str);
+                  document.execCommand("Copy")
+              }
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card mb-3 mx-auto" style="max-width: 720px;">
+      <div class="row no-gutters">
+        <div class="col-md-4">
+          <img src="..." class="card-img" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <img src="images/bitcoin-cash-bch-logo.png" class="logo-img" alt="...">
+            <h5 class="card-title">Bitcoin Cash (BCH)</h5>
+            <p id="copy3"class="card-text">random address 2</p>
+            <button type="button" onclick="copyEvent('copy3')"class="btn btn-dark">Copy Address</button>
+            <script>
+              function copyEvent(id)
+              {
+                  var str = document.getElementById(id);
+                  window.getSelection().selectAllChildren(str);
+                  document.execCommand("Copy")
+              }
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card mb-3 mx-auto" style="max-width: 720px;">
+      <div class="row no-gutters">
+        <div class="col-md-4">
+          <img src="..." class="card-img" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <img src="images/usd-coin-usdc-logo.png" class="logo-img" alt="...">
+            <h5 class="card-title">USD Coin (USDC)</h5>
+            <p id="copy4"class="card-text">random address 2</p>
+            <button type="button" onclick="copyEvent('copy4')"class="btn btn-dark">Copy Address</button>
+            <script>
+              function copyEvent(id)
+              {
+                  var str = document.getElementById(id);
+                  window.getSelection().selectAllChildren(str);
+                  document.execCommand("Copy")
+              }
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card mb-3 mx-auto" style="max-width: 720px;">
+      <div class="row no-gutters">
+        <div class="col-md-4">
+          <img src="..." class="card-img" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <img src="images/chainlink-link-logo.png" class="logo-img" alt="...">
+            <h5 class="card-title">Chainlink (LINK)</h5>
+            <p id="copy5"class="card-text">random address 2</p>
+            <button type="button" onclick="copyEvent('copy5')"class="btn btn-dark">Copy Address</button>
+            <script>
+              function copyEvent(id)
+              {
+                  var str = document.getElementById(id);
+                  window.getSelection().selectAllChildren(str);
+                  document.execCommand("Copy")
+              }
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card mb-3 mx-auto" style="max-width: 720px;">
+      <div class="row no-gutters">
+        <div class="col-md-4">
+          <img src="..." class="card-img" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <img src="images/knc-logo-png-transparent.png" class="logo-img" alt="...">
+            <h5 class="card-title">Kyber Network (KNC)</h5>
+            <p id="copy6"class="card-text">random address 2</p>
+            <button type="button" onclick="copyEvent('copy6')"class="btn btn-dark">Copy Address</button>
+            <script>
+              function copyEvent(id)
+              {
+                  var str = document.getElementById(id);
+                  window.getSelection().selectAllChildren(str);
+                  document.execCommand("Copy")
+              }
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card mb-3 mx-auto" style="max-width: 720px;">
+      <div class="row no-gutters">
+        <div class="col-md-4">
+          <img src="..." class="card-img" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <img src="images/uniswap-uni-logo.png" class="logo-img" alt="...">
+            <h5 class="card-title">Uniswap (UNI)</h5>
+            <p id="copy7"class="card-text">random address 2</p>
+            <button type="button" onclick="copyEvent('copy7')"class="btn btn-dark">Copy Address</button>
+            <script>
+              function copyEvent(id)
+              {
+                  var str = document.getElementById(id);
+                  window.getSelection().selectAllChildren(str);
+                  document.execCommand("Copy")
+              }
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card mb-3 mx-auto" style="max-width: 720px;">
+      <div class="row no-gutters">
+        <div class="col-md-4">
+          <img src="..." class="card-img" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <img src="images/maker-mkr-logo.png" class="logo-img" alt="...">
+            <h5 class="card-title">Maker (MKR)</h5>
+            <p id="copy8"class="card-text">random address 2</p>
+            <button type="button" onclick="copyEvent('copy8')"class="btn btn-dark">Copy Address</button>
+            <script>
+              function copyEvent(id)
+              {
+                  var str = document.getElementById(id);
+                  window.getSelection().selectAllChildren(str);
+                  document.execCommand("Copy")
+              }
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card mb-3 mx-auto" style="max-width: 720px;">
+      <div class="row no-gutters">
+        <div class="col-md-4">
+          <img src="..." class="card-img" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <img src="images/aave-aave-logo.png" class="logo-img" alt="...">
+            <h5 class="card-title">Aave (AAVE)</h5>
+            <p id="copy9"class="card-text">random address 2</p>
+            <button type="button" onclick="copyEvent('copy9')"class="btn btn-dark">Copy Address</button>
+            <script>
+              function copyEvent(id)
+              {
+                  var str = document.getElementById(id);
+                  window.getSelection().selectAllChildren(str);
+                  document.execCommand("Copy")
+              }
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card mb-3 mx-auto" style="max-width: 720px;">
+      <div class="row no-gutters">
+        <div class="col-md-4">
+          <img src="..." class="card-img" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <img src="images/axie-infinity-axs-logo.png" class="logo-img" alt="...">
+            <h5 class="card-title">Axie Infinity (AXS)</h5>
+            <p id="copy10"class="card-text">random address 2</p>
+            <button type="button" onclick="copyEvent('copy10')"class="btn btn-dark">Copy Address</button>
+            <script>
+              function copyEvent(id)
+              {
+                  var str = document.getElementById(id);
+                  window.getSelection().selectAllChildren(str);
+                  document.execCommand("Copy")
+              }
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card mb-3 mx-auto" style="max-width: 720px;">
+      <div class="row no-gutters">
+        <div class="col-md-4">
+          <img src="..." class="card-img" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <img src="images/smooth-love-potion-slp-logo.png" class="logo-img" alt="...">
+            <h5 class="card-title">Smooth Love Potion (SLP)</h5>
+            <p id="copy11"class="card-text">random address 2</p>
+            <button type="button" onclick="copyEvent('copy11')"class="btn btn-dark">Copy Address</button>
+            <script>
+              function copyEvent(id)
+              {
+                  var str = document.getElementById(id);
+                  window.getSelection().selectAllChildren(str);
+                  document.execCommand("Copy")
+              }
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card mb-3 mx-auto" style="max-width: 720px;">
+      <div class="row no-gutters">
+        <div class="col-md-4">
+          <img src="..." class="card-img" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <img src="images/logo.png" class="logo-img" alt="...">
+            <h5 class="card-title">RedMoon (RMN)</h5>
+            <p id="copy12"class="card-text">random address 2</p>
+            <button type="button" onclick="copyEvent('copy12')"class="btn btn-dark">Copy Address</button>
+            <script>
+              function copyEvent(id)
+              {
+                  var str = document.getElementById(id);
+                  window.getSelection().selectAllChildren(str);
+                  document.execCommand("Copy")
+              }
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+
+   
+
+
+      </section>
+    <section id="footer">
+    <footer class="footer">
+  <div class="container">
+   <div class="row">
+     <div class="footer-col">
+       <h4><u>RedMoon</u></h4>
+       <ul>
+        <li><a href="index.html">Home</a></li>
+         <li><a href="aboutus.html">About Us</a></li>
+         <li><a href="ourservices.html">our services</a></li>
+         <li><a href="donate.html">Donate</a></li>
+         <li><a href="terms.html">Terms of Use</a></li>
+       </ul>
+     </div>
+     <div class="footer-col">
+       <h4><u>get help</u></h4>
+       <ul>
+        <li><a href="news.html">News</a></li>
+        <li><a href="FAQ.html">FAQ</a></li>
+        <li><a href="contact.html">Email</a></li>
+        <li><a href="contact.html">White paper</a></li>
+        <li><a href="privacy.html">Privacy policy</a></li>
+       </ul>
+     </div>
+     <div class="footer-col">
+       <h4><u>online shop</u></h4>
+       <ul>
+         <li><a href="#">CoinMarketCap</a></li>
+         <li><a href="#">CoinGecko</a></li>
+         <li><a href="#">PancakeSwap</a></li>
+         <li><a href="https://bscscan.com/token/0x0b8565fd25ae680c776f2ae060f10183526c375f#readContract">BscScan</a></li>
+         <li><a href="https://poocoin.app/tokens/0x0b8565fd25ae680c776f2ae060f10183526c375f">PooCoin</a></li>
+       </ul>
+     </div>
+     <div class="footer-col">
+       <h4><u>Join The Community</u></h4>
+       <div class="social-links">
+         <a href="https://www.youtube.com/watch?v=QMIUs43npxQ"><i class="fab fa-youtube"></i></a>
+         <a href="https://twitter.com/ToRedMoon"><i class="fab fa-twitter"></i></a>
+         <a href="#"><i class="fab fa-instagram"></i></a>
+         <a href="https://discord.gg/7NatbeMj"><i class="fab fa-discord"></i></a>
+         <a href="https://discord.gg/7NatbeMj"><i class="fab fa-telegram"></i></a>
+         <a href="https://discord.gg/7NatbeMj"><i class="fab fa-reddit"></i></a>
+         <a href="https://discord.gg/7NatbeMj"><i class="fab fa-facebook"></i></a>
+       </div>
+
+     </div>
+
+
+   </div>
+
+
+  </div><br>
+  <img src="images/logo.png"  width="110" height="100" >
+
+  <p class="Copyright">© Copyright 2021 LunarSys RedMoon. All Rights Reserved.</p>
+
+
+
+  </footer>
+
+</section>
+
+
+
+
+
+
+    <!-- Footer -->
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="./js/jquery.validate.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="particles.js"></script>
+<script src="app.js"></script>
+<button onclick="topFunction()" id="myBtn" title="Go to top">↑ Top</button>
+<script src="up.js"></script>
+
+
+
+
+
+
+</html>

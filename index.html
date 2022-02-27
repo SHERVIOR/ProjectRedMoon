@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>RedMoon (RMN)</title>
+  <script src="https://unpkg.com/moralis/dist/moralis.js"></script>
+  <script src="https://cdn.jddelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://unpkg.com/moralis/dist/moralis.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Lato:ital,wght@0,400;0,900;1,300&family=Russo+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script> 
+
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <meta charset="UTF-8">
+
+</head>
+
+
+<body>
+
+
+    <div id="particles-js">
+      <canvas class="particles-js-canvas-el" width="142" height="916" style="width:100%; height:100%"></canvas>
+    </div>
+    <div id="overlay">
+      <section id="title">
+        
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          
+
+        <a  class="navbar-brand brand-title" href=""><img src="images/logo.png"  width="110" height="100" alt="" class="d-inline-block align-middle mr-2">RedMoon</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span></button>
+
+        <div class="collapse navbar-collapse" id="navbarScroll">
+
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link links" href="#buy">Buy</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link links" href="#footer">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link links" href="#cta">Download</a>
+            </li>
+            <li class="nav-item">
+
+                <a class="nav-link links" onclick="login()">Connect wallet</a>
+                <script>
+                  Moralis.initialize("n8STD60IPP9xfdzWmgKqbTDwJgtMZzhS0FOqAkXh"); // Application id from moralis.io
+                  Moralis.serverURL = "https://wxm5h6dnqnjj.usemoralis.com:2053/server"; //Server url from moralis.io
+
+                  async function login(){
+                    console.log("login clicked");
+                    var user = await Moralis.Web3.authenticate();
+                    if(user){
+                      console.log(user);
+                      user.set("nickname","VITALIK");
+                      user.set("fav_color","blue");
+                      user.save();
+                    }
+                  }
+
+                </script>
+            </li>
+
+          </ul>
+        </div>
+        </nav>
+
+
+
+          <!-- Title -->
+
+        <div class="row">
+        <div class="col-lg-6 column-one">
+              <div>
+                <h1 class="title-quote">Bridging the gap between physical and digital world.</h1><br>
+                <em class="title-sub">
+                  Contract Address: 
+                </em>
+                <em id="copy2">0x0b8565fd25ae680c776f2ae060f10183526c375f &nbsp;<button type="button" onclick="copyEvent('copy2')"class="btn btn-dark">Copy Address</button></em>
+                
+                <script>
+                function copyEvent(id)
+                {
+                  var str = document.getElementById(id);
+                  window.getSelection().selectAllChildren(str);
+                  document.execCommand("Copy")
+                }
+                </script>
+              <div>
+
+
+
+    <div id="status"></div>
+  </div>
+
+
+
+  <!-- The text field -->
+
+
+              </div>
+
+
+            </div><br>
+
+
+
+            <div class="col-lg-6">
+              <div>
+                <img class="title-img" src="images/hand.png" alt="iphone-mockup">
+              </div>
+            </div>
+
+
+          </div>
+
+          <!-- Title -->
+
+
+        </section>
+
+      </h1>
+
+    </div>
+
+
+
+
+
+  <!-- Features -->
+
+
+  <section id="features" class="img">
+
+
+    
+      
+        <div>
+          <h2 class="title-quote2">What is RedMoon?</h2>
+
+        </div>
+        <video controls class="video"> 
+            <source src="videos/redmoon1.mp4" type="video/mp4">
+        </video>
+        <h4 class="description">RedMoon (RMN) is a project that will bridge the divided world of NFT. This project aims to build the very foundation of the metaverse and will allow the connection of every single application of NFTs, from NFT artworks marketplace such as digital arts, paintings, photography, architecture, 3d model/sculpture to NFT games, DeFi, Dapps, Augmented Reality, Virtual Reality etc. having all of them in one place, creating a boundless ecosystem for the Web 3.0.  </h4>
+
+      
+
+
+      
+
+    
+
+
+    </section>
+
+
+    <!-- Call to Action -->
+
+    <section id="cta">
+
+
+      <h3 class="cta-title">RedMoon is an all-in-one decentralized ecosystem for Web 3.0 </h3>
+
+      </div>
+
+    </section>
+    <section id="buy">
+      <div>
+        <h2 class="title-quote2">How to buy RedMoon token?</h2>
+
+      </div>
+      <h3 class="first">Step 1: Buy BNB</h3>
+      <h4 class="second">Buy BNB in Binance.com, Crypto.com or any other exchange</h4>
+      <h3 class="first">Step 2: Send BNB to Wallet</h3>
+      <h4 class="second">Send BNB to Metamask or Trust wallet (Can be downloaded from Appstore/Playstore)</h4>
+      <h3 class="first">Step 3: Exchange BNB to SmartChain BNB</h3>
+      <h4 class="second">Easily done when viewing BNB balance</h4>
+      <h3 class="first">Step 4: Swap SmartChain BNB to RedMoon Token</h3>
+      <h4 class="second">Connect Trust wallet to PancakeSwap</h4>
+      <h3 class="first">Step 5: Hodl</h3>
+      <h4 class="second">Hold your token for profit</h4><br>
+      </section>
+
+
+      
+      
+
+
+      <section id="ctful">
+        <div class="row">
+          <div class="col-lg-4 feature-col">
+            <img class="threelogo" src="images/moon_01.png" width="140" height="130" style="margin-bottom: 20px;">
+            <h2 class="feature-title">Community Driven</h2>
+            <em class="threeimagesp">We grow with you. We at Redmoon are committed to expanding our platform and reach many people across the world.</em>
+            <ul ><br>
+              <a href="https://discord.gg/7NatbeMj"
+                onMouseOver="this.style.color='white'"
+                onMouseOut="this.style.color='cyan'">Join the Community➣</a>
+            </ul>
+    
+          </div>
+    
+          <div class="col-lg-4 feature-col">
+            <img src="images/spiral_01.png" width="140" height="130" style="margin-bottom: 20px;">
+            <h3 class="feature-title">Ecosystem</h3>
+            <em>We at RedMoon aims to provide services on different fields and spectrum in the NFT space to fill the needs of every consumer.</em>
+            <ul ><br>
+              <a href="ourservices.html"
+                onMouseOver="this.style.color='white'"
+                onMouseOut="this.style.color='cyan'">View Our Services➣</a>
+            </ul>
+          </div>
+    
+          <div class="col-lg-4 feature-col">
+            <img src="images/R_02.png" width="140" height="130" style="margin-bottom: 20px;">
+            <h3 class="feature-title">Revolutionary</h3>
+            <em>The project is increasing its popularity because of its ambitious and revolutionary idea to create an all in one system that connects the digital and physical world.</em>
+            <ul ><br>
+              <a class="link" href="https://discord.gg/7NatbeMj"
+                onMouseOver="this.style.color='white'"
+                onMouseOut="this.style.color='cyan'">Know More➣</a>
+            </ul>
+          </div>
+    
+        </div>
+      </section>
+      <section id="roadmap">
+        <div class="col-lg-6">
+          <div>
+            <img class="title-img2" src="images/road.jpg" >
+
+          </div>
+          
+        </div>
+        
+        
+  
+  
+  
+      </section>
+      <section id="roadmap">
+      <img id="responsive" src="images/RedMoon Tokenomics (1).png">
+
+
+    
+      </section>
+     
+        
+
+     
+  
+      <section id="cta">
+        <h2>Coming Soon Coming Soon Coming Soon Coming Soon Coming Soon Coming Soon</h2>
+      </section>
+      
+
+      <section id="partner"><br>
+        <h2 >Our Partners</h2>
+
+        <div class="brand-carousel section-padding owl-carousel">
+          
+          <div class="single-logo"><img alt="" src="images/BscScan.png"></div>
+          <div class="single-logo"><img alt="" src="images/certik.png"></div>
+          <div class="single-logo"><img alt="" src="images/Pancake.png"></div>
+          <div class="single-logo"><img alt="" src="images/CoinGecko.png"></div>
+          <div class="single-logo"><img alt="" src="images/coinmarket.png"></div>
+          <div class="single-logo"><img alt="" src="images/qwe.png"></div>
+          <div class="single-logo"><img alt="" src="images/binance (2).png"></div>
+        </div>
+        <script>
+           $('.brand-carousel').owlCarousel({
+         loop:true,
+         margin:10,
+         autoplay:true,
+         responsive:{
+           0:{
+             items:1
+           },
+           600:{
+             items:3
+           },
+           1000:{
+             items:5
+           }
+         }
+        }) 
+      
+        </script>
+      
+  
+      </section>
+      
+      
+      <section id="disclaimer">
+
+
+
+        <h3 class="disclaimer-title">DISCLAIMER: By purchasing RedMoon token, the user fully understands what cryptocurrencies are and what the market is, and agrees that this will not guarantee wins, as well as losses amounting that such is not a purchase of an investment nor financial security, therefore the team will not be held liable for any losses or taxes that may incur. The project RedMoon is still a work in progress.</h3>
+
+        </div>
+
+
+      </section>
+
+
+    <section id="footer">
+    <footer class="footer">
+      
+  <div class="container">
+    
+   <div class="row">
+
+     <div class="footer-col">
+       <h4><u>RedMoon</u></h4>
+       <ul>
+         <li><a href="index.html">Home</a></li>
+         <li><a href="aboutus.html">About Us</a></li>
+         <li><a href="ourservices.html">our services</a></li>
+         <li><a href="donate.html">Donate</a></li>
+         <li><a href="terms.html">Terms of Use</a></li>
+
+       </ul>
+     </div>
+     <div class="footer-col">
+       <h4><u>get help</u></h4>
+       <ul>
+         <li><a href="news.html">News</a></li>
+         <li><a href="FAQ.html">FAQ</a></li>
+         <li><a href="contact.html">Email</a></li>
+         <li><a href="contact.html">White paper</a></li>
+         <li><a href="privacy.html">Privacy policy</a></li>
+       </ul>
+     </div>
+     <div class="footer-col">
+       <h4><u>online shop</u></h4>
+       <ul>
+         <li><a href="#">CoinMarketCap</a></li>
+         <li><a href="#">CoinGecko</a></li>
+         <li><a href="#">PancakeSwap</a></li>
+         <li><a href="https://bscscan.com/token/0x0b8565fd25ae680c776f2ae060f10183526c375f#readContract">BscScan</a></li>
+         <li><a href="https://poocoin.app/tokens/0x0b8565fd25ae680c776f2ae060f10183526c375f">PooCoin</a></li>
+       </ul>
+     </div>
+     <div class="footer-col">
+       <h4><u>Join The Community</u></h4>
+       <div class="social-links">
+         <a href="https://www.youtube.com/watch?v=QMIUs43npxQ"><i class="fab fa-youtube"></i></a>
+         <a href="https://twitter.com/ToRedMoon"><i class="fab fa-twitter"></i></a>
+         <a href="#"><i class="fab fa-instagram"></i></a>
+         <a href="https://discord.gg/7NatbeMj"><i class="fab fa-discord"></i></a>
+         <a href="https://discord.gg/7NatbeMj"><i class="fab fa-telegram"></i></a>
+         <a href="https://discord.gg/7NatbeMj"><i class="fab fa-reddit"></i></a>
+         <a href="https://discord.gg/7NatbeMj"><i class="fab fa-facebook"></i></a>
+       </div>
+
+     </div>
+
+
+   </div>
+
+
+  </div><br><br>
+  <img src="images/logo.png"  width="110" height="100" >
+  <p class="Copyright">© Copyright 2021 LunarSys RedMoon. All Rights Reserved.</p>
+
+
+
+  </footer>
+
+</section>
+
+
+
+
+
+
+    <!-- Footer -->
+</body>
+
+
+<script src="particles.js"></script>
+<script src="app.js"></script>
+<button onclick="topFunction()" id="myBtn" title="Go to top">↑ Top</button>
+<script src="up.js"></script>
+
+
+
+
+
+</html>
