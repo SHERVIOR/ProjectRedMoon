@@ -1,0 +1,635 @@
+
+
+
+
+
+#title{
+    color: #fff;
+    position: relative;
+    padding: 3% 15% 1%;
+  
+  
+  
+  }
+  
+  a {
+    color: cyan;
+  }
+  
+  
+  .brand-title{
+    font-family: 'Russo One', sans-serif;
+    font-weight: 500;
+    font-size: 2.5rem;
+  
+  }
+  
+  h1{
+    font-family: 'Russo One', sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #ffffff;
+  
+  }
+  
+  #particles-js {
+    background: linear-gradient(-45deg, #EE7752, #E73C7E,#23A6D5, #23D5AB);
+    background-size: 300% 200%;
+    animation: change 15s ease-in-out infinite;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  
+  }
+  html{
+    scroll-behavior: smooth;
+  }
+  #myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background: -webkit-linear-gradient(#E73C7E, #EE7752);/* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  
+  #myBtn:hover {
+    background: -webkit-linear-gradient(#450920, #A53860); /* Add a dark-grey background on hover */
+  }
+  
+  
+  .links{
+    font-family: 'Russo One', sans-serif;
+    font-weight: 300;
+    font-size: 1.20rem;
+  }
+  
+  .particles-js-canvas-el {
+    height: 100vmax !important;
+    z-index: 0;
+  }
+  
+  
+  body{
+    font-family: 'Russo One', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    overflow-x: hidden;
+  }
+  
+  
+  #overlay {
+    position: relative;
+  
+  }
+  
+  
+  
+  
+  
+  
+  
+  .nav-item{
+  
+    padding: 0 18px;
+  }
+  
+  
+  .navbar{
+  
+    padding: 0 0 4.5rem;
+  }
+  
+  
+  .navbar-nav .nav-item.active .nav-link,
+  .navbar-nav .nav-item:hover .nav-link {
+      color: white;
+  }
+  
+  .title-quote{
+  
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 3.5rem;
+    line-height: 1.5;
+    color: white
+  
+  }
+  
+  .title-sub{
+    font-family: 'Montserrat', sans-serif;
+    font-weight:800;
+    font-size: 1.5rem;
+    line-height: 2;
+    color: white
+  
+  }
+  
+  .btn-download{
+    margin: 5% 3% 5% 0;
+  }
+  
+  .fab-icon{
+    margin-right: 8px;
+  }
+  
+  .title-img{
+    width: 90%;
+  
+    position: absolute;
+    left: 10%
+  
+  
+  }
+  
+  /* Features */
+  #features{
+    padding: 5% 20%;
+    position: relative;
+    background-color: white;
+  
+  }
+  
+  .fa-icon{
+    margin: 1rem;
+  }
+  
+  .feature-title{
+    font-size: 1.5rem;
+    font-weight: 900;
+  }
+  
+  p{
+    color: grey;
+  }
+  
+  .feature-col{
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Testimonial Section */
+  #testimonials,#press{
+    background-color: #d4574e;
+    text-align: center;
+    color: white;
+  }
+  
+  .testimonial-image{
+    border-radius: 50%;
+    width: 10%;
+    margin: 2px;
+  }
+  
+  @media screen and (max-width: 320px){
+    .title-img{
+      position: relative;
+      height: 50px;
+      width: 75px;
+    }
+    .title-quote{
+      text-align: center;
+      font-size: 2.5rem;
+    }
+    .title-sub{
+      position: relative;
+      font-size: 0.60rem;
+    }
+  }
+  .testimonial-text{
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 1.5;
+  }
+  
+  .carousel-item{
+    padding: 7% 14%;
+  }
+  
+  /* Press Section */
+  .press-logo{
+    width: 15%;
+    margin: 20px 20px 50px;
+  }
+  
+  
+  #press{
+    padding: 3%;
+  }
+  
+  /* Pricing Section */
+  
+  
+  /* CTA Section */
+  #cta{
+    color: #fff;
+    background: linear-gradient(-45deg, #EE7752, #E73C7E,#23A6D5, #23D5AB);
+    background-size: 200% 200%;
+    position: relative;
+    animation: change 10s ease-in-out infinite;
+    padding: 7% 14%;
+    text-align: center;
+  }
+  .cta-title{
+    font-weight: 900;
+    line-height: 1.5;
+    color: white;
+    font-size: 3.5rem;
+  }
+  
+  
+  #disclaimer{
+    font-style: normal;
+    color: #fff;
+    background: #0B1454;
+    background-size: 200% 200%;
+    position: relative;
+    padding: 6% 12%;
+    text-align: center;
+  
+  }
+  .disclaimer-title{
+    font-weight: 100;
+    line-height: 1;
+    color: white;
+    font-size: 1rem;
+  }
+  
+  
+  /* Footer Section */
+  #footer{
+  
+    text-align: center;
+    position: relative;
+  }
+  
+  
+  }
+  
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+  }
+  
+  html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  .column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+  }
+  
+  .about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #474e5d;
+    color: white;
+  }
+  
+  .container {
+    padding: 0 16px;
+  }
+  
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: grey;
+  }
+  
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
+  
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+  
+  section{
+  
+  }
+  @keyframes change {
+    0%{
+      background-position: 0 50%;
+    }
+    50%{
+      background-position: 100% 50%;
+    }
+    100%{
+      background-position: 0 50%;
+    }
+  }
+  
+  .accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+  }
+  .accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+  }
+  
+  *{
+      margin:0;
+      padding:0;
+      box-sizing: border-box;
+  }
+  .container{
+      max-width: 1170px;
+      margin:auto;
+  }
+  .row{
+      display: flex;
+      flex-wrap: wrap;
+  }
+  ul{
+      list-style: none;
+  }
+  .footer{
+      background-color: #24262b;
+      padding: 70px 0;
+  }
+  .footer-col{
+     width: 25%;
+     padding: 0 15px;
+  }
+  .footer-col h4{
+      font-size: 18px;
+      color: #ffffff;
+      text-transform: capitalize;
+      margin-bottom: 35px;
+      font-weight: 500;
+      position: relative;
+  }
+  
+  .footer-col ul li:not(:last-child){
+      margin-bottom: 10px;
+    position: relative;
+  }
+  .footer-col ul li a{
+      font-size: 16px;
+      text-transform: capitalize;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 300;
+      color: #bbbbbb;
+      display: block;
+      transition: all 0.3s ease;
+  
+  }
+  .footer-col ul li a:hover{
+      color: #ffffff;
+      padding-left: 8px;
+  }
+  .footer-col .social-links a{
+      display: inline-block;
+      height: 40px;
+      width: 40px;
+      background-color: rgba(255,255,255,0.2);
+      margin:0 10px 10px 0;
+      text-align: center;
+      line-height: 40px;
+      border-radius: 50%;
+      color: #ffffff;
+      transition: all 0.5s ease;
+  }
+  .footer-col .social-links a:hover{
+      color: #24262b;
+      background-color: #ffffff;
+  }
+  .Copyright{
+    margin-top: 50px;
+    padding-bottom: 0px;
+  }
+  @media screen and (max-width: 1024px){
+    html, body {
+      margin:0;
+      padding:0;
+      overflow-x: hidden;
+  
+  
+    }
+    .title-img{
+      margin-top: 30px;
+      left: 30px;
+      position: relative;
+      height: 200px;
+      width:400px;
+    }
+    .title-quote{
+      font-size: 2.25rem;
+    }
+  }
+  
+  @media screen and (max-width: 320px){
+  
+    .title-img{
+      margin-top: 30px;
+      height: 115px;
+      width: 230px;
+      position: relative;
+      left: 10px
+    }
+    .title-quote{
+      text-align: center;
+      font-size: 2.5rem;
+    }
+    .title-sub{
+      position: relative;
+      font-size: 0.60rem;
+    }
+    .footer-col h4{
+        font-size: 10px;
+        color: #ffffff;
+        text-transform: capitalize;
+        margin-bottom: 35px;
+      margin-right: 3px;
+        font-weight: 500;
+        position: relative;
+    }
+    .footer-col ul li a{
+        font-size: 10px;
+        text-transform: capitalize;
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: 300;
+        color: #bbbbbb;
+        display: block;
+        transition: all 0.3s ease;
+  
+    }
+    .footer-col .social-links a{
+        display: inline-block;
+        height: 25px;
+        width: 25px;
+        background-color: rgba(255,255,255,0.2);
+        margin:0 5px 5px 0;
+        text-align: center;
+        line-height: 25px;
+        border-radius: 50%;
+        color: #ffffff;
+        transition: all 0.5s ease;
+    }
+    .footer-col ul li a:hover{
+        color: #ffffff;
+    }
+    .Copyright{
+      margin-top: 50px;
+      padding-bottom: 0px;
+      font-size: 10px;
+    }
+  
+  }
+  
+  
+  
+  
+  @media screen and (max-width: 768px){
+    html, body {
+      margin:0;
+      padding:0;
+      overflow-x: hidden;
+  
+  
+    }
+    .title-img{
+      right: -10px;
+      position: absolute;
+    }
+  }
+  @media screen and (max-width: 375px){
+      .title-img{
+        position: relative;
+      }
+  }
+  
+  @media screen and (max-width: 2560px){
+    .title-img{
+      position: relative;
+      left: 20px;
+      top: -70px;
+      width: 500px;
+      height: 350px;
+    }
+    .title-quote{
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 900;
+      font-size: 4.5rem;
+      line-height: 1.5;
+      color: white
+    }
+  }
+  @media screen and (max-width: 2732px){
+    .title-img{
+      position: relative;
+      left: 25%;
+      height: 70%;
+    }
+  }
+  
+  @media screen and (max-width: 2726px){
+    .title-img{
+      position: relative;
+      left: 25%;
+      height: 70%;
+    }
+  }
+  
+  @media screen and (max-width: 2048px){
+    .title-img{
+      position: relative;
+      left: 25%;
+      height: 70%;
+    }
+  }
+  
+  
+  
+  @media screen and (max-width: 1440px){
+    html, body {
+      margin:0;
+      padding:0;
+      overflow-x: hidden;
+  
+  
+    }
+    .title-img{
+      position: relative;
+      left: 20px;
+      top: -70px;
+      width: 500px;
+      height: 350px;
+    }
+  }
+  
