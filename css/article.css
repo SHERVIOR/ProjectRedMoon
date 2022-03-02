@@ -530,6 +530,8 @@ a{
     z-index: 0;
   }
   
+
+  html {zoom: 100%;}
   
   body{
     font-family: 'Russo One', sans-serif;
