@@ -1,8 +1,4 @@
-
-*{ 
-  margin: 0px; 
-  padding: 0px; 
-}
+*{ margin: 0; padding: 0; } 
 #title{
     color: #fff;
     position: relative;
@@ -15,7 +11,7 @@
   @import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Poppins&family=Roboto&display=swap');
 
 /* root styling */
- 
+
 
 body {
   overflow: auto;
@@ -263,21 +259,17 @@ html {zoom: 100%;}
 
 
 #posts{
-  margin: 0;
-  padding: 0;
-
-  
    position: relative;
 }
 
 .grid{
   position: relative;
-  margin: 0;
+    margin: 0 auto;
 }
 
 .grid .grid-item{
     width: calc(33.3333% - 20px);
-    
+    margin-bottom: 3em;
 }
 
 /* ----------- .Main Section ---------- */
@@ -621,16 +613,6 @@ html {zoom: 100%;}
   
   }
   
-
-  #space{
-    padding-top: 2%;
-    margin-top: 2px;;
-    
-    position: relative;
-    background-color: white;
-  }
-
-
   /* Features */
   #features{
     padding-top: 5%;
@@ -791,7 +773,7 @@ html {zoom: 100%;}
   }
   
   .container {
-    padding: 0;
+    padding: 0 16px;
   }
   
   .container::after, .row::after {
